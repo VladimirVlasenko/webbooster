@@ -1,0 +1,112 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.catalog {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    position: relative;
+}
+.card_container {
+    display: flex;
+    width: 25%;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    min-height: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+    
+}
+.card:hover {
+    box-shadow: 0px 0px 20px 14px rgba(34, 60, 80, 0.2);
+}
+.img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    position: relative;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    cursor: pointer;
+    background-color: #f13c6e;
+    height: 26px;
+    width: 80%;
+    padding: 0px 28px;
+    border-radius: 13px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.name {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.price {
+    margin-bottom: 10px;
+}
+.form_wrapper {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(111,111,111, .9);
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 14px;
+}
+input {
+    border: 1px solid rgba(111, 111, 111, 0.4);
+    height: 28px;
+    border-radius: 14px;
+    width: 80%;
+    padding: 0 15px;
+}
+input[type="submit"] {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #f13c6e;
+    color: #ffffff;
+}
+.form_wrapper.active {
+    display: block;
+
+}
